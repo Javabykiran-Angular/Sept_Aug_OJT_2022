@@ -1,0 +1,19 @@
+Last Lecture
+1 Environmental setup
+2 Difference Between Angular Js & Angular 2+ (2/4/5/6/7/8/9/10/11/12/13/14)
+	- 
+
+Today Lecture
+1 What is Angular 
+2 Why Angular
+3 what is SPA?
+	
+
+
+
+
+
+
+
+
+
