@@ -1,0 +1,32 @@
+Last Lecture
+1 What is Angular 
+	- it is a freamwork
+	- GUI + functionality
+	- angular,react js, vue js,emmber js ...,jsp 
+2 Why Angular
+	- it creates template declaration,module,component,servies,Di
+	- it is universal freamwork
+	- it is mvw arch
+	- optimize,speed & perfomance 
+	- code splitting 
+	- it has angular cli 
+3 what is SPA?
+	- it has one main html file=> index.html
+	- 1 head & 1 body 
+	- spa envi. provides
+
+Today Lecture
+1 What is typescript?
+2 Advantages & disadvantages of typescript
+3 vscode overview 
+4 simple program of typescript
+	
+
+
+
+
+
+
+
+
+
