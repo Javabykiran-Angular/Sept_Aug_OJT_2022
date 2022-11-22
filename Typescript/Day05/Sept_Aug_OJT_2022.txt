@@ -1,0 +1,39 @@
+Last Lecture
+1 What is typescript?
+	- type lang
+	- ts is superset of js 
+	- typescript= ecma script standard + ecma script version + additional features of typescript
+2 Advantages & disadvantages of typescript
+	adv
+	- strong static typing
+	- compile time error
+	- its support oops concept
+	
+	diav
+	 - it does not support browser
+		tsc compiler=> it transcompile ts file to js 
+	 - compile time is more other than available compile in the market 	
+3 vscode overview
+	
+4 simple program of typescript
+	demo1.ts
+		console.log("Welcome to Angular");
+		tsc demo1.ts & node demo1.js
+
+Today Lecture
+1 variable
+2 data types 
+3 type assertion
+4 operators
+
+
+	
+
+
+
+
+
+
+
+
+
