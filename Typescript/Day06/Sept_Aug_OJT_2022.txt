@@ -1,0 +1,50 @@
+Last Lecture
+1 variable
+	var a1,a2;
+2 data types 
+	- number,string,boolean,any,void,misec null & undefined
+	var a1:number=10;
+	var a2:number; // default value undefined
+	var str!:string;
+	var a1:number| string;
+	var a2:10|boolean;
+	var a3=10;
+	var a4;
+	
+3 type assertion
+	var a1:any;
+	1 angle bracket
+		var temp=(<string>a1);
+	2 as synatx
+	
+	var temp=(a1 as string );
+	
+	
+4 operators
+	- airth
+	- logical
+	- bitwise
+	- assignment
+		=== Strongly equaltiy
+		== 
+	- relational
+	- unarry
+	- ternary
+
+Today Lecture
+1 Control statement
+2 Loop Statement
+3 difference between var vs let vs const
+4 functions in typescript
+
+
+	
+
+
+
+
+
+
+
+
+
