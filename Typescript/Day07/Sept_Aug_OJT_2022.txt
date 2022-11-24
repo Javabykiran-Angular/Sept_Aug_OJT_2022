@@ -1,0 +1,87 @@
+Last Lecture
+1 Control statement
+	if ,if-else,switch,break
+	if(count<4){
+	...
+	}
+	switch(choice){
+		case 1: ...
+				break;
+		....
+		default :....	
+				break;
+	}
+	
+2 Loop Statement
+	while(count!=0){
+		...
+	}
+	do{
+		....
+	}while(count!=0)
+	
+	for(var i=0;i<4;i++){
+	....
+	}
+	
+	
+3 difference between var vs let vs const
+	var => global scope
+	let => within nearest block
+	const=> global as well as local scope 
+4 functions in typescript
+	function add1(){
+	...
+	}
+	
+	add1();
+	
+	function add2(a:number,b:number){
+		console.log(a+b)
+	}
+	add2(7,8);
+	
+	function add3():number{
+		return (8+8)
+	}
+	let res=add3();
+	
+	function add4(a:number,b:number):number{
+		return (a+b)
+	}
+	
+	console.log(add4(5,5)
+	
+5 Anonymous functions
+	let temp=function (){
+	...
+	}
+	
+	temp();
+	
+	let temp2=function (a:number,b:number):number{
+		return (a+b);
+	}
+	
+		let res=temp2(3,4);
+
+Today Lecture
+1 fat arrow functions
+2 FAR=> Function Activation Record
+3 optional parameter functions
+4 Default parameter functions
+5 basics of array
+6 join method 
+
+
+
+	
+
+
+
+
+
+
+
+
+
