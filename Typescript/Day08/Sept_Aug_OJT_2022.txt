@@ -1,0 +1,57 @@
+Last Lecture
+1 fat arrow functions
+	let temp=(a:number,b:number):number=>{
+		return (a+b);
+	}
+	
+	ley res=temp(2,3)
+2 FAR=> Function Activation Record
+	
+3 optional parameter functions
+	function add1(a?:number,b?:number){
+	....
+	}
+	add1(4)
+4 Default parameter functions
+	function add1(a:number,b:number=12){
+	....
+	}
+	
+	add1(2,4)
+
+5 basics of array
+	let a1:number[]=[];
+	let a1:number[]=[4,5,6];
+	let a1=[7,8,9]
+	let a1=[7,8,'sumit']
+	
+	console.log(a1);
+	
+	
+6 join method 
+
+console.log(a1.join(' '));
+
+
+Today Lecture
+1 foreach method
+	
+2 rest parameter functions
+3 Push & pop method
+4 splice
+5 slice
+6 map 
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
