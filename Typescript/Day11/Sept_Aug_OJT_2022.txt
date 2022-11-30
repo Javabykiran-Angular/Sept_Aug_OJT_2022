@@ -1,0 +1,103 @@
+Last Lecture
+1 Array Of Object
+	let arrpobj=[
+		{
+			id:9,
+			fname:'sumit',
+			lname:'Raokhande',
+			country:{
+				cid:1,
+				cname:'India'
+			},
+			month:[".."],
+			result:[
+				{
+					subj:"..",
+					marks:45
+				},
+				{
+					subj:"..",
+					marks:45
+				}
+				,{
+					subj:"..",
+					marks:45
+				}
+			]
+		},
+		{
+			id:9,
+			fname:'sumit',
+			lname:'Raokhande'
+		}
+		,{
+			id:9,
+			fname:'sumit',
+			lname:'Raokhande'
+		}
+		
+	];
+	
+	for(let i=0;i<arrpobj.length;i++){
+		console.log(`
+			id :: ${arrpobj[i].id}
+			...
+			arrpobj[i].country.cname
+			arrpobj[i].month.join("  ")
+		`)
+		
+		arrpobj[i].result.foreach((item)=>{
+			console.log(
+				item.subj
+				item.marks
+			)
+		})
+		
+	}
+	
+2 typescript additional features
+	1 class
+		class Myclass{
+			id:number;
+			fname:string;
+			
+			constructor(id:number,fname:string){
+				....
+			}
+			
+			
+			display(){
+				console.log("
+					this.id
+					this.fname
+				")
+			}
+			
+		}
+		
+		let obj=new Myclass(9,"Sumit");
+		obj.display();
+	2 object,property
+	3 method
+	4 constructor
+	
+Today Lecture
+1 Access Specifier
+2 Access in same package
+3 Access in different package
+4 inheritance
+5 method override
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
