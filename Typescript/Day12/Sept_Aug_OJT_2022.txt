@@ -1,0 +1,81 @@
+Last Lecture
+1 Access Specifier
+	public,private & protected
+2 Access in same package
+demo1.ts
+	 export class Myclass{
+	
+	}
+	export function add(a:number,b:number){
+		return (a+b)
+	}
+	
+	export const pi=3.14;
+	demo2.ts
+	import {Myclass,add,pi} from './demo1';
+	....
+3 Access in different package
+	myfloder
+		demo3.ts
+	import {Myclass} from '../day11/demo1';
+	
+4 inheritance
+	export class Shape{
+		myarea(){
+		.....
+		}
+	}
+	
+	import....
+	export class Circle extends Shape 
+	{
+		....
+		
+		constructor(r:number){
+			super();
+			....
+			
+		}
+		
+		override myarea():void{
+			this.area=3.14*this.radius*this.radius*this;
+			
+		}
+		
+		display(){
+			console.log(`
+				....
+			`)
+		}
+		
+	}
+	
+	import {Circle} from './circle'
+	...
+	
+	Circle obj=new Circle(2);
+		obj.myarea();
+		obj.display();
+		...
+		
+	
+5 method override
+
+Today Lecture
+1 Interface
+2 composition/contentment/has relationship
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
