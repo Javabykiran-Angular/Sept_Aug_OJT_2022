@@ -1,0 +1,111 @@
+Last Lecture
+1 Interface
+	export class Employee{
+		fname:string;
+		lname:string;
+		fullname?:string;
+		display();
+	}
+	
+	export class EmployeeDetails implements Employee{
+		fname:string;
+		lname:string;
+		salary:number;
+		dept:Department;
+		
+		constructor(f:string,l:string,sal:number,r:string){
+			....
+			this.dept=new Department(role)
+		}
+		display(){
+			.....
+			this.dept.getRole()
+		}
+	}
+	
+	
+	export class Department{
+		private role:string;
+		
+			constructor(r:string){
+			....
+			}
+		
+		///getter & setter
+	}
+	
+	let obj=new EmployeeDetails("sumit"...,'Devops');
+		obj.display();
+	
+2 composition/contentment/has relationship
+3 Angular Installation & Project creation
+
+
+Today Lecture
+1 Arch. Overview
+	
+	- angular is component orientated arch.
+	- component
+		1 view file => .html
+		2 stylesheet file => .css
+		3 component file => .ts
+		4 testing => sepc.ts
+		
+		- every component has meta data
+			it gives extra information about component
+			
+			@Component({
+				selector:'',
+				templateUrl:'./'
+				StyleUrls:[]
+			})
+			...
+	- data binding
+		- data flows from component to view 
+		1 String Interpolation
+		2 Property Binding
+		3 Style binding
+		4 Class Binding
+	- event binding
+		- data/request flow view to component
+		- click,change,key board,mouse event,....	
+	- directive
+		- it manage ur dom/element behaviour 
+		- attribute directive,structural directive,component directive...
+	- app Module
+		- one root module is present, and other than root module we can create multiple module
+		1 component declaration
+			- to register a component
+		2 import
+			- u can register ur module 
+		3 services
+			- it is simple class 
+			- BL write 
+			- providers key 
+			- DI 
+		4 routing
+			- navigation from one component to another 
+			- data can be send using url 
+	- Injector
+		- use 3rd party services/module/variable 
+		- angular in build service/module/variable 
+		
+2 Application flow/ work
+	
+3 Component creation manually
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
