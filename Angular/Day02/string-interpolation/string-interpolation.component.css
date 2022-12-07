@@ -1,0 +1,16 @@
+img{
+    width: 350px;
+    height: 250px;
+    border: 2px solid greenyellow;
+    border-radius: 50%;
+}
+
+.mycolor{
+    color: red;
+    font-style: italic;
+}
+
+#myid{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}

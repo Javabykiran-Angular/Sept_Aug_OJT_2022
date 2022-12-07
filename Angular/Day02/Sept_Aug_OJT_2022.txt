@@ -1,0 +1,96 @@
+Last Lecture
+1 Arch. Overview
+	
+	- angular is component orientated arch.
+	- component
+		1 view file => .html
+		2 stylesheet file => .css
+		3 component file => .ts
+		4 testing => sepc.ts
+		
+		- every component has meta data
+			it gives extra information about component
+			
+			@Component({
+				selector:'',
+				templateUrl:'./'
+				StyleUrls:[]
+			})
+			...
+	- data binding
+		- data flows from component to view 
+		1 String Interpolation
+		2 Property Binding
+		3 Style binding
+		4 Class Binding
+	- event binding
+		- data/request flow view to component
+		- click,change,key board,mouse event,....	
+	- directive
+		- it manage ur dom/element behaviour 
+		- attribute directive,structural directive,component directive...
+	- app Module
+		- one root module is present, and other than root module we can create multiple module
+		1 component declaration
+			- to register a component
+		2 import
+			- u can register ur module 
+		3 services
+			- it is simple class 
+			- BL write 
+			- providers key 
+			- DI 
+		4 routing
+			- navigation from one component to another 
+			- data can be send using url 
+	- Injector
+		- use 3rd party services/module/variable 
+		- angular in build service/module/variable 
+		
+2 Application flow/ work
+	
+3 Component creation manually
+	1 employee.component.ts
+		@Component({
+			selector:'app-employee',
+			templateUrls:'./employee.component.html',
+			StyleUrls:['./employee.component.css']
+		})
+		export class EmployeeComponent{
+		
+		}
+		app.module.ts
+		declaration:[
+			EmployeeComponent
+		]
+	2 employee.component.html 
+	3 employee.component.css
+	
+	app.component.html 
+	<app-employee>
+
+Today Lecture
+1 Component creation through cli
+2 data binding
+  - data flow from component to view file 
+	
+3 string interpolation
+	
+4 property binding
+5 diff. between string interpolation vs property binding
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
