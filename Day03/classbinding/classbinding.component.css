@@ -1,0 +1,16 @@
+.success{
+    color: green;
+}
+
+.danger{
+    color: red;
+}
+.warning{
+    color: orange;
+}
+.special{
+    font-style: italic;
+    font-size: 32px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}

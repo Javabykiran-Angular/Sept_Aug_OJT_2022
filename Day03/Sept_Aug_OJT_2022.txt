@@ -1,0 +1,97 @@
+Last Lecture
+1 Component creation through cli
+	ng g c student
+	
+	employee.html
+	<app-student>
+	
+2 data binding
+  - data flow from component to view file 
+  
+	
+3 string interpolation
+	<h2>{{name}}</h2>
+	<h2>{{'welcome '+name}}</h2>
+	img src="imgUrl">
+	
+	stringinterpolation.ts
+	imgUrl:string='../../assets/bg2.jpg'
+	
+	h2> {{getname()}}
+	
+4 property binding
+	<input [value]="name">
+	img [src]="imgUrl"
+	
+	table >
+		tr>
+		td [attr.colspan]="colnum">one
+		</tr>
+		<tr>
+			td > two
+			td> three
+		</tr>
+	
+	.ts file
+	name:string='..';
+	
+5 diff. between string interpolation vs property binding
+	<div hidden =" {{ishidden}} ">
+	.....
+	
+	<div [hidden]="ishidden">
+	
+		.ts
+		ishidden:boolean=false;
+	
+Today Lecture
+1 Style Binding
+2 Class Binding
+3 Event binding
+	- data/request flow from view to component
+4 click
+
+	Employee & country 
+	country
+		cid => autoincrement & primary
+		cname => country name
+	
+	Employee
+		id => autoincrement & primary
+		name 
+		department
+		status => active,inactive,suspend
+		created date => date 
+		created by =>person name
+		Updatetated date  => date 
+		Updatetated by => person name 
+		phoneno
+		emailid
+		gender
+		country=> foregin key  
+			
+	- u hv one to one mapping with emp & country 
+	
+	10 api 
+	
+	1 getallcountry => array of object 
+	2 addCountry  => string message 
+	3 update country => string message
+	4 delete country => string message
+	5 getcountrybyid => particular country object (json)
+	6 getallemployee => array of object 
+	7 addallemployee => string message
+	8 updateemployee => string message
+	9 deleteemployee => string message
+	10 getempByIdemployee => particular emp object (json)
+
+	
+
+
+
+
+
+
+
+
+
