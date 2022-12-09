@@ -1,0 +1,41 @@
+<p>eventbinding2 works!</p>
+
+<!-- $event 
+    - it is special variable given by angular
+    - it gives current dom element information
+    - it json object form information   
+    - u can only access the value   
+    drawback
+    1 u can't change the value 
+    2 u can't change the behviour of html element
+-->
+<!-- <button value="Doller event!!!" (click)="onClick($event)" >click</button> -->
+
+<!-- template ref variable 
+    - u can apply any html element
+     -it gives dom information of html element
+     -u can change the data 
+     - u can change the behviour of html element
+-->
+<!-- 
+<input #inputname type="text" placeholder="Enter the element"> <br><br>
+<button (click)="onSend(inputname)" >Send</button> <br><br>
+
+
+<input #inputname1 type="text" placeholder="Enter the element"> <br><br>
+<button (click)="onSend1(inputname1.value)" >Send</button> -->
+
+<!-- <label for="">Num1 :: &nbsp;&nbsp;</label>
+<input #num1 type="text" placeholder="Enter the number1"><br><br>
+
+<label for="">Num2 :: &nbsp;&nbsp;</label>
+<input #num2 type="text" placeholder="Enter the number2"><br><br>
+<button (click)="onAddition(num1.value,num2.value)" >Addition</button> <br><br>
+
+<label for="">Result :: &nbsp;&nbsp;</label>
+<input [value]="result" type="text" placeholder="Display The result"><br><br> -->
+
+
+<input #myname type="text" (change)="onChange(myname)"
+ placeholder="Enter the name ">
+ 
