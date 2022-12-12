@@ -1,0 +1,87 @@
+Last Lecture
+1 $event
+	- it is special variable 
+	- it gives current dom information
+	
+	<button value="...." (click)="onClick($event)">
+	
+	.ts file
+	
+	onClick(mydoller:any){
+		console.log(mydoller)
+		console.log(mydoller.target.value)
+	}
+	
+	
+	
+2 template ref variable
+	-it gives dom information
+	<input #inputname >
+	button (click)="onClick(inputname)">
+	
+	.ts file
+	onClick(myname:any){
+		myname.value;
+		myname.style.background='green'
+		
+		
+	}
+	
+	<input #inputname >
+	button (click)="onClick(inputname.value)">
+	
+	
+	
+3 Real time simple eg
+	
+		<label > Number 
+		<input #num1 >
+		<label > Number 
+		<input #num2 >
+		<button (click)="onaddition(num1.value,num2.value)"
+		<input [value]="result">
+	
+	.ts 
+	
+	onaddition(num1:any,num2:any){
+		let n1=+num1;
+		let n2=+num2;
+	
+	
+		this.result=n1+n2;
+		//this.result=num1+num2;
+	}
+4 change event
+	<input #input (change)="onChange(input)">
+	
+	.ts
+	onChange(myinput:any){
+	...
+	...
+	}
+
+Today Lecture
+1 keyboard event 
+	1 keyup
+	2 keydown
+2 keyboard filtering 
+3 without using event handler
+4 Two way Binding
+	ngModel
+	- Attribute directive
+	- FormsModule
+	- any html tags it work 
+	- [()] => banana in the box 
+	- [(ngModel)]="Property name"
+
+
+
+
+
+
+
+
+
+
+
+
