@@ -1,0 +1,55 @@
+Last Lecture
+1 keyboard event 
+	1 keyup
+		<input (keyup)="onKeyup()">
+		
+	2 keydown
+		<input (keydown)="onkeyDown()"
+2 keyboard filtering 
+	
+	<input (keyup.enter)="onEnter()"
+	
+3 without using event handler
+		<button (click)="result=8+8">
+		{{result}}
+	
+4 Two way Binding
+	ngModel
+	- Attribute directive
+	- FormsModule
+	- any html tags it work 
+	- [()] => banana in the box 
+	- [(ngModel)]="Property name"
+	
+	<input [(ngModel)]="name">
+	{{name}}
+	
+	.ts file
+	
+	name:string='';
+	
+Today Lecture
+1 Structural directive
+	- it is dynamically modify or manipulate or hide ur dom structure 
+	- 1 *ngIf => on the basis of condition u can modify ur structure 
+	  2 *ngFor => 	if u want iterate dynamically 
+	  3 *ngSwitch => to perform any specific case or condition 
+2 if directive
+	component directive
+		<ng-template>
+3 for directive
+4 Mouse event 
+	- mouseover
+	- mouseout
+
+
+
+
+
+
+
+
+
+
+
+
