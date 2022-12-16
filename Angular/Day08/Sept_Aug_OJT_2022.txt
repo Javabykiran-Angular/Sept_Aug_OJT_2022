@@ -1,0 +1,48 @@
+Last Lecture
+1 switch directive
+	<input #inputcolor >
+	<button (click)="onSend(inputcolor.value)">
+	
+	
+	<div [ngSwitch]="choice">
+		<div *ngSwitchCase="'red'"
+			[style.background="choice"
+		>.....
+		<div *ngSwitchdefault
+			[style.background]="choice==''?'black':'orange'"
+			>....
+	
+	.ts 
+	onSend(colorname:string){
+		this.choice=colorname.trim().toLoweCase();
+		
+		if(this.choice=='red'||this.choice=='green' || this.choice=='blue' ){
+		
+		}		
+		
+	}	
+	
+
+Today Lecture
+1 Component interaction
+	- u can send data(string/number/boolean/array/json/array of object) from one component to another component
+	
+	- primary things 
+		parent-child relationship to be established
+	
+2 @Input Decorator
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

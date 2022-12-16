@@ -1,0 +1,11 @@
+<p>parent works!</p>
+
+<input #inputmsg type="text" placeholder="Enter the Message"><br><br>
+<button (click)="onSend(inputmsg.value)" >Send</button>
+
+<hr>
+<app-child1 [parentStrData]="strData" 
+            [ParentJsonData]="jsonObj"
+            [ParesntMessage]="sendMessage"
+            [AppCompDate]="appDate"
+></app-child1>
