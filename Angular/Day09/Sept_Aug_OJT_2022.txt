@@ -1,0 +1,54 @@
+Last Lecture
+1 Component interaction
+	- u can send data(string/number/boolean/array/json/array of object) from one component to another component
+	
+	- primary things 
+		parent-child relationship to be established
+		
+	
+2 @Input Decorator
+	- to send data from parent to child 
+	
+	parent 
+	app.
+	<app-parent>
+	
+	parent.ts
+	
+	strdata:string ='';
+	jsobj={
+		
+	}
+	
+	parent.html
+	<app-child1 [ParentStrData]="strdata" 
+				[ParentJsonData]="jsobj">
+
+child1.ts
+
+	@Input() ParentStrData:string='';
+	@Input() ParentJsonData={}
+child1.html 
+{{ParentStrData}}	
+.....
+
+Today Lecture
+1 @output Decorator
+	- to send data from child to parent 
+	- u hv to create a custom event 
+	- U use class EventEmitter to create custom event 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
