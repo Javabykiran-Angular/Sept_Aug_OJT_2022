@@ -1,0 +1,53 @@
+Last Lecture
+1 @output Decorator
+	- to send data from child to parent 
+	- u hv to create a custom event 
+	- U use class EventEmitter to create custom event 
+	
+	child.ts
+	
+	strdata:string='...';
+	
+	@Output() childStrData=new EventEmitter();
+	arrproduct=[{}];
+	
+	@Output() childarrData=new EventEmitter();
+	
+	onSend(){
+		this.childStrData.emit(this.strdata);
+		this.childarrData.emit(this.arrproduct)
+	}
+	
+	parent.html
+	{{strreceived}}
+	....
+	
+	<app-child2 (childStrData)="strreceived=$event" 
+				(childarrData)="arrprod=$event">
+	
+	parent.ts
+	strreceived:string='';
+	arrprod:any[]=[];
+	
+Today Lecture
+1 @ViewChild
+	1 u can access parent html element in parent component file 
+	2 u can access property as well as method of child component in parent component
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
