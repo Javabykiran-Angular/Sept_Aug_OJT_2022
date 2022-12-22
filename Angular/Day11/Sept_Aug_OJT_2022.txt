@@ -1,0 +1,62 @@
+Last Lecture
+1 @ViewChild
+	1 u can access parent html element in parent component file
+		<div #mydiv>
+		....
+		
+	parent.ts
+	
+	AfterViewInit
+	
+	@ViewChild('mydiv') accessdiv!:ElemerntRef;
+	
+	ngAfterViewInit(){
+	
+		console.log(this.accessdiv);
+		this.accessdiv.nativeElement.className='mydiv'
+	}
+	
+	2 u can access property as well as method of child component in parent component
+	
+	child.ts
+	username:string='';
+	
+	onAlert(){
+		alert('...'+this.username)
+	}
+	
+	.html
+	<app-child3>
+	parent.ts
+	@ViewChild(ChildComponent3) accesschild:ChildComponent3;
+	
+	onProperty(){
+		this.accesschild.username='Sumit raokhande';
+	}
+	
+	onMethodAccess(){
+		this.accesschild.onAlert();
+	}
+
+Today Lecture
+1 Pipe
+	- it transform ur data to end user without changing its original value 
+2 Inbuild Pipe
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
