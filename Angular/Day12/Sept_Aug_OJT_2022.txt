@@ -1,0 +1,36 @@
+Last Lecture
+1 Pipe
+	- it transform ur data to end user without changing its original value 
+2 Inbuild Pipe
+	lowercase,uppercase,titlecase,slice
+	percent,currency
+	number , date => 
+	chaining pipe => date | uppercase 
+
+Today Lecture
+1 Custom pipe
+2 pure pipe 
+	it works on deterministic value 
+3 impure pipe 
+	 it works on non-deterministic value
+4 PipeTransform 
+5 transform
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
