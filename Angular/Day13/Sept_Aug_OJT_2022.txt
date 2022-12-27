@@ -1,0 +1,119 @@
+Last Lecture
+1 Custom pipe
+	
+	summary.pipe.ts
+	@Pipe({
+		name:'summary',
+		pure:false
+	})
+	exprot class SummaryPipe implements PipeTransform{
+		
+		transform(value:any,start:number=0,end:number=20){
+			
+			let temp=(<string>value);
+			
+			return (temp.substring(start,end)+"...");
+			
+		}
+	}
+	
+	app.module.ts
+	declaration:[
+	SummaryPipe
+	]
+	
+	custom.html
+	<h2> {{strdetails | summary}}
+	<h2> {{strdetails | summary:0:50}}
+	
+2 pure pipe 
+	it works on deterministic value 
+3 impure pipe 
+	 it works on non-deterministic value
+4 PipeTransform 
+5 transform
+
+
+Today Lecture
+1 Service
+	- it is simple class 
+	- it is used to write BL 
+	- it is used to code maintability 
+	- it is used code resulability 
+	- it provides a isolation to ur component 
+2 Depedancy injection
+3 http protocol
+	- it is set of rule
+	- it is connectionless protocol/stateless protocol
+4 http Method
+	1 get => get data from back end server
+	2 post => to send data from front end to back end server
+	3 put => to update a particular data 
+	4 delete => to delete a particular data 
+5 http request/http response
+	http request
+		it has 2 part 
+		1 http header
+			- url
+			- date,time
+			- ip
+			- method
+			- content Type
+				- image
+				- text
+				- pdf
+				- doc/excel
+				- application/json
+			- auth token 
+			- route
+		2 http body
+			- data 
+				1 text/html
+				2 xml 
+				3 json 
+				
+	http response
+		it has 2 part 
+		1 http header
+			- url
+			- date,time
+			- ip
+			- method
+			- content Type
+				- image
+				- text
+				- pdf
+				- doc/excel
+				- application/json
+			- auth token 
+			- route
+			- status code
+				1 2xx=> ok,success200,201=>299
+				2 3xx=> redirection 301,302=>399
+				3 4xx=> client side error 400,401,402
+				5 5xx=> Server side error 500,501,502
+		2 http body
+			- data 
+				1 text/html
+				2 xml 
+				3 json 
+		
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
