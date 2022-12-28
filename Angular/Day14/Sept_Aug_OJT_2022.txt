@@ -1,0 +1,120 @@
+Last Lecture
+1 Service
+	- it is simple class 
+	- it is used to write BL 
+	- it is used to code maintability 
+	- it is used code resulability 
+	- it provides a isolation to ur component 
+	export class CourseService{
+		private course:string[]=[];
+		
+		getCourse(){
+			return this.course
+		}
+	}
+	
+	couser.ts 
+	@Componet({
+		//provider:[CourseService]
+	})
+	
+	constructor(private service :CourseService){
+		//let service=new CourseService();
+		
+		//this.mycourse=service.getCourse()
+	}
+	ngOninit(){
+	this.mycourse=this.service.getCourse()
+	}
+	
+	app.module.ts
+	provider:[CourseService]
+2 Depedancy injection
+3 http protocol
+	- it is set of rule
+	- it is connectionless protocol/stateless protocol
+4 http Method
+	1 get => get data from back end server
+	2 post => to send data from front end to back end server
+	3 put => to update a particular data 
+	4 delete => to delete a particular data 
+5 http request/http response
+	http request
+		it has 2 part 
+		1 http header
+			- url
+			- date,time
+			- ip
+			- method
+			- content Type
+				- image
+				- text
+				- pdf
+				- doc/excel
+				- application/json
+			- auth token 
+			- route
+		2 http body
+			- data 
+				1 text/html
+				2 xml 
+				3 json 
+				
+	http response
+		it has 2 part 
+		1 http header
+			- url
+			- date,time
+			- ip
+			- method
+			- content Type
+				- image
+				- text
+				- pdf
+				- doc/excel
+				- application/json
+			- auth token 
+			- route
+			- status code
+				1 2xx=> ok,success200,201=>299
+				2 3xx=> redirection 301,302=>399
+				3 4xx=> client side error 400,401,402
+				5 5xx=> Server side error 500,501,502
+		2 http body
+			- data 
+				1 text/html
+				2 xml 
+				3 json 
+		
+
+
+Today Lecture
+1 Http service 
+	https://jsonplaceholder.typicode.com/posts
+	
+	- fake service 
+		- it can't store data in database (post,update,delete)but if u give request (post,put,delete) it will give u a response of that request 
+		
+	
+2 get request
+3 @Injectable()
+4 observable
+5 post request
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
