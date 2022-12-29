@@ -1,0 +1,90 @@
+Last Lecture
+1 Http service 
+	https://jsonplaceholder.typicode.com/posts
+	
+	- fake service 
+		- it can't store data in database (post,update,delete)but if u give request (post,put,delete) it will give u a response of that request 
+		
+	ng g s http 
+	
+2 get request
+3 @Injectable()
+	
+	@Injectable({
+		provideIn:"root"
+	})
+	export class HttpService{
+	
+		url:string='https://jsonplaceholder.typicode.com/posts'
+	
+		constructor(private http:HttpClient){}
+		
+		getPost(){
+			return (this.http.get(this.url));
+		}
+	
+	}
+	
+	post.ts
+	
+		constructor(private service:HttpService){}
+		
+		this.GetPost(){
+			this.service.getPost()
+			.subscribe((response:any)=>{
+				this.posts=response;
+			})
+		}
+		
+		Postdata(obj:any){
+			return (this.http.post(this.url,obj))
+		}
+		
+	
+	app.module.ts
+	HttpClientModule
+	
+4 observable
+5 post request
+
+	<input #inputtitle>
+	<input #inputbody>
+	<button (click)="onSend(inputtitle.value,...)"
+	
+	.ts
+	onSend(mytitle:any,mybody:any){
+		let obj={
+			title:mytitle,
+			body:mybody
+		}
+		
+		this.service.Postdata(obj)
+		.subscribe((response)=>{
+			console.log(response)
+		})
+		
+	}
+	
+
+Today Lecture
+1 put request
+2 delete request
+3 error handling
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

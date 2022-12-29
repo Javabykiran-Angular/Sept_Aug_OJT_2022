@@ -1,0 +1,14 @@
+th,tr,td{
+    border: 1px solid;
+}
+
+button{
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid green;
+    border-radius: 8px;
+}
+
+button:hover{
+    background-color: green;
+}
