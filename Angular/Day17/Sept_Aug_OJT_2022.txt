@@ -1,0 +1,90 @@
+Last Lecture
+1 Routing
+	- navigation from one component to another component
+2 Routing Steps
+	1 configure the route 
+		[
+			{
+				path:"",component:HomeComponent
+			},
+			
+			{
+				path:"Page1",component:Page1Component
+			},
+			{
+				path:"Page2/:id/:username",component:Page2Component
+			},
+			{
+				path:"**",component:NotFoundComponent
+			}
+		]
+	2 use <router-outlet>
+	app.component.html
+		<router-outlet>
+	3 establish the link/navigate between component
+3 routerLink
+		home.html
+		<a routerLink="/Page1">
+		<a [routerLink]="['/Page2',myid,myusername">
+		
+		<a routerLink="/queryparam" queryparams="json"
+		
+		page.ts
+		
+		constructor(private route:ActivatatedRoute){}
+		
+		GetDataFromUrl(){
+			this .route.ParamMap
+			.sunscibe((param:any)=>{
+				this.myid=+param.get("id")
+			})
+		}
+		
+		queryparam.ts
+		constructor(private route:ActivatatedRoute){}
+		GetDataFromUrl(){
+			this .route.QueryParamMap
+			.sunscibe((param:any)=>{
+				this.myid=+param.get("id")
+			})
+		}
+		
+		follwer.html
+		<img routerLink="/myfollwer">
+		
+		myfollwer.html
+		<button routerLink="/follower"
+		
+4 <router-outlet>
+5 wild cart operator
+6 empty path 
+7 send paramter from one component to another component
+8 Query paramter
+
+Today Lecture
+1 Dynamic Routing
+	- navigate method
+	- Router package 
+2 Child Routes
+	
+3 Lazy Loading
+	
+4 Feature module/Custom Module
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
