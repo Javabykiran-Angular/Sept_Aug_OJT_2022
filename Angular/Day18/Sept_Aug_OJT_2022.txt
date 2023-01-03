@@ -1,0 +1,87 @@
+Last Lecture
+1 Dynamic Routing
+	- navigate method
+	- Router package 
+	<button (click)="onPage1()"> Page1
+	....
+	
+	.ts file
+	
+	constructor(private router:Router){}
+	
+	onPage1(){
+		this.router.navigate(['/Page2',this.myid,this.myusername]);
+	}
+	onQueryparam(){
+		this.router.navigate(['/queryparam'],{
+			queryPrams:this.json
+		})
+	}
+- Difference between Observable & promise
+2 Child Routes
+	
+	app-routing.ts
+	
+	{
+		path:'products',childern:[
+			{
+				path:"",component:productComponent
+			},
+			{
+				path:"mobile",component:MobileComponent
+			}
+			...
+		]
+	}
+	
+3 Lazy Loading
+	
+	
+4 Feature module/Custom Module
+	ng g m user --routing 
+	
+	user-routing.ts
+	[
+		{
+			path:"",component:listuserComponent
+		},
+		{
+			path:'update',component:UpdateUserComponent
+		}
+		...
+	]
+	
+	app-routing.ts
+	
+	{
+		path:"user",loadchidern:()=>import('/user/user.module').then(m=>m.userModule)
+	}
+	
+	
+	home.html
+	<a routerLink="user">
+
+	
+Today Lecture
+1 Modify the routing
+2 Rxjx Lib
+	- Observable 
+3 How u can send data through the service
+4 Subject
+5 BehaviorSubject
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
