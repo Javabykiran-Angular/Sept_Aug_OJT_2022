@@ -1,0 +1,75 @@
+Last Lecture
+1 Modify the routing
+	<app-notification>
+	<app-home>
+	
+	home.html
+	<router-outlet>
+	
+	{
+		path:"",component:Page1Component
+	}
+	
+2 Rxjx Lib
+	- Observable 
+3 How u can send data through the service
+	ng g s notification
+	export class notificationService{
+			notifications=new BehaviorSubject<string>('welcome');
+			
+			sendMessage(msg:string){
+				this.notifications.next(msg);
+			}
+	}
+	
+	queryparamter.ts
+	onSend(msg:string){
+		this.servicenotification.sendMessage(msg)
+	}
+	
+	notification.ts
+	
+		ngonInit(){
+			this.getdataReceived()
+		}
+		
+		getdataReceived(){
+			this.servicenotification.notifications
+			.subcribe((data)=>{
+				this.datareceived=data;
+			})
+		}
+	
+4 Subject
+5 BehaviorSubject
+	
+Today Lecture
+1 Overview of Bootstrap
+	- css freamwork
+	- make ur application attractive
+	- make ur application responsive
+2 Inetgration of Bootstrap
+	1 online
+		u can use CDN Link 
+		
+	2 offline
+		npm install --save bootstrap@4.6
+		style.css
+		@import "~bootstrap/dist/css/bootstrap.css";
+3 Basic grid system of bootstrap
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
