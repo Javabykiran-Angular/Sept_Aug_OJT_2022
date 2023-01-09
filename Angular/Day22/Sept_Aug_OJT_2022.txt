@@ -1,0 +1,119 @@
+Last Lecture
+1 continue tdf
+2 ngSubmit
+3 ngValue
+
+Today Lecture
+1 Project
+
+	create login api
+	
+	sql => DB
+		1 Employee
+		2 Country
+	3 Registration
+		DB Side => 
+		1 name => varchar(250)
+		2 address => varchar(250)
+		3 dob     => Date 
+		4 email id => varchar(250) => unique 
+		5 password => varchar(50)
+		6 mobile no => varchar(20)
+		7 gender  => varchar(20)
+		8 id => Primary key => Autoincrement => 10
+		9 creationDate => Date 
+		
+	Spring Boot
+		
+		Create entity
+			
+			@Entity
+			class Registration{
+				
+				@Id
+				@GenerationValue(GenerationType.auto)
+				int id;
+				@colum(unique=true)
+				String emailId;
+				String password;
+				Date creationDate;
+				
+				//getter & setter
+				//constructor & tostring
+				
+					
+			}
+	
+	@RestConstroller
+	@CrossOrigin
+	class RestConstroller{
+		
+		@PostMapping("/login")
+		public HashMap login(@RequestBody Registration reg){
+			
+			HashMap obj =service.login(reg);
+			return obj;
+		
+		}		
+		
+	}
+	
+	serice.java
+	
+	public HashMap login(Registration reg){
+			
+			Registration user =dao.login(reg);
+			HashMap map=new HashMap();
+			
+		//	JsonObject jsonobj=new JsonObject();
+			
+		
+			if(user!=null){
+				map.put("msg","Valid User");
+				map.put("user",user);
+			}else{
+			map.put("msg","InValid User");
+				map.put("user",user);
+			}
+			
+			return map
+		
+		}	
+	dao.java
+	
+	public Registration login(Registration reg){
+			
+			//session factory object
+			Criteria 
+			// critera.CreateCriteria.addEqualit(regi.getemailid()) 
+			
+			Registration obj=....
+			
+			return obj;
+			
+		
+		}		
+		
+		
+		
+	
+	
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
